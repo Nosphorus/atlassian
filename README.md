@@ -113,7 +113,6 @@ Data persisted on the  named volumes, to see them:
 
 
        $ docker volume ls
-       local               atlassian_bitbucket-data
        local               atlassian_confluence-data
        local               atlassian_jira-data
        local               atlassian_database-data
