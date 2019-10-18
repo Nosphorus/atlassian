@@ -2,9 +2,9 @@
 It's Atlassian docker compose file, to run Atlassian products with docker on one single machine.
 
 ```
-jira.example.com   wiki.example.com   bitbucket.example.com
-       +                   +                    +
-       |                   |                    |
+jira.example.com                        wiki.example.com
+       +                                        +
+       |                                        |
        +----------------------------------------+
                            |
                            v
@@ -12,11 +12,11 @@ jira.example.com   wiki.example.com   bitbucket.example.com
                            +
        +-----------------------------------------+
        |                   |                     |
-       v                   v                     v
-   Atlassian Jira    Atlassian Confluence   Atlassian Bitbucket
- [host:jira:8080]   [host:confluence:8090]  [host:bitbucket:7990]
-       +                   +                     |
-       |                   |                     |
+       v                                         v
+Atlassian Jira                         Atlassian Confluence
+[host:jira:8080]                      [host:Confluence:8090]
+       +                                         |
+       |                                         |
        +-----------------------------------------+
                            |
                            v
@@ -50,7 +50,6 @@ Docker image source files:
 
 - [cptactionhank/atlassian-jira](https://hub.docker.com/r/cptactionhank/atlassian-jira/)
 - [cptactionhank/atlassian-confluence](https://hub.docker.com/r/cptactionhank/atlassian-confluence/)
-- [atlassian/bitbucket-server](https://hub.docker.com/r/atlassian/bitbucket-server/)
 - [nginx](https://hub.docker.com/_/nginx/)
 - [postgres](https://hub.docker.com/_/postgres/)
 
