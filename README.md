@@ -25,9 +25,9 @@ jira.example.com   wiki.example.com   bitbucket.example.com
                            +
                            |
        +------------------------------------------+
-       |                   |                      |
+       |                                          |
        v                                          v
-   [db:jira]                     			  [db:wiki]
+   [db:jira]                                  [db:wiki]
 ```
 
 
