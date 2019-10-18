@@ -33,8 +33,8 @@ jira.example.com   wiki.example.com   bitbucket.example.com
 
 Atlassian supported products:
 
-- Jira `7.9.2`
-- Confluence `6.9.0`
+- Jira `latest`
+- Confluence `latest`
 
 
 With:
