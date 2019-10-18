@@ -26,8 +26,8 @@ jira.example.com   wiki.example.com   bitbucket.example.com
                            |
        +------------------------------------------+
        |                   |                      |
-       v                   v                      v
-   [db:jira]           [db:wiki]          [db:bitbucket]
+       v                                          v
+   [db:jira]                     			  [db:wiki]
 ```
 
 
@@ -35,7 +35,7 @@ Atlassian supported products:
 
 - Jira `7.9.2`
 - Confluence `6.9.0`
-- Bitbucket `5.10.1`
+
 
 With:
 - Postgres `9.4`
@@ -60,7 +60,7 @@ How to use:
 
 
     ```
-    $ git clone https://github.com/omidraha/atlassian
+    $ git clone https://github.com/Nosphorus/atlassian
     ```
 
 2. Set environment variables:
@@ -84,7 +84,7 @@ How to use:
     $ vim /etc/hosts
         127.0.0.1 jira.example.com www.jira.example.com
         127.0.0.1 wiki.example.com www.wiki.example.com
-        127.0.0.1 bitbucket.example.com www.bitbucket.example.com
+        
     ```
 Replace `127.0.0.1` with IP of host that `docker-compose` command run on it.
 
@@ -95,7 +95,6 @@ Replace `127.0.0.1` with IP of host that `docker-compose` command run on it.
     $ docker exec -it atlassian_database_1  psql -U postgres
        postgres=# CREATE DATABASE jira;
        postgres=# CREATE DATABASE wiki;
-       postgres=# CREATE DATABASE bitbucket;
        postgres=# \l
        postgres-# \q
     ```
@@ -106,7 +105,6 @@ Replace `127.0.0.1` with IP of host that `docker-compose` command run on it.
         ```
         http://jira.example.com
         http://wiki.example.com
-        http://bitbucket.example.com
         ```
 
 Notes:
