@@ -55,7 +55,7 @@ Docker image source files:
 
 How to use:
 
-1. Clone the atlassian:
+1. Clone the atlassian folder:
 
 
     ```
