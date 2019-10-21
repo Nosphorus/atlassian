@@ -62,11 +62,10 @@ How to use:
     $ git clone https://github.com/Nosphorus/atlassian
     ```
 
-2. Set environment variables:
-   These will set :::::
+2. Set the nginx environment variable:
 
     ```
-    $ export DOMAIN=example.com
+    Example: $ export DOMAIN=example.com
      ```
 
 3. Run docker compose:
@@ -85,9 +84,9 @@ How to use:
         127.0.0.1 wiki.example.com www.wiki.example.com
         
     ```
-Replace `127.0.0.1` with IP of host that `docker-compose` command run on it.
+Replace `127.0.0.1` with IP of host that `docker-compose` command is run on.
 
-5. Create Databases:
+5. Create Databases for the applications:
 
 
     ```
@@ -108,7 +107,7 @@ Replace `127.0.0.1` with IP of host that `docker-compose` command run on it.
 
 Notes:
 
-Data persisted on the  named volumes, to see them:
+Data persists on named volumes, use the code below to view them:
 
 
        $ docker volume ls
